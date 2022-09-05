@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
 ]
 
-DEBUG= True
+DEBUG= False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

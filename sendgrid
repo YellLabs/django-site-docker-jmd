@@ -1,0 +1,4 @@
+#!/bin/bash
+
+scp sendgrid.env root@saturdaynightdj.co.uk:/srv/test8.saturdaynightdj.co.uk/
+

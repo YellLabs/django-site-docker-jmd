@@ -2,6 +2,12 @@
 {% load static %}
 {% block content %}
 
+  <script>
+  function confirmReceiptFunction() {
+    alert("Thank you. We have received your message. We will get in touch shortly");
+  }
+  </script>
+
 	  <h3>Demolition</h3>
 	<p>
 	We work at the highest level of professionalism to safely take down, wearing overalls and respirators, and wrap and fasten where appropriate for the job, load and securely transport the waste for recycling and further processing of any hazardous materials at a licensed waste yard. We have passed multiple qualifications in how to handle Asbestos safety and effectiveness - and retrain frequently. We have taken down around 50 garages covering the whole of the Southeast of England.
@@ -14,7 +20,7 @@
        {% csrf_token %}
        {{ form.as_p }}
        <div class="form-actions">
-       <button type="submit">Send</button>
+       <button onclick="confirmReceiptFunction()" type="submit">Send</button>
        </div>
        </form>
 
